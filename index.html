@@ -146,6 +146,11 @@
             display:grid; gap:18px;
             grid-template-columns: repeat(12, 1fr);
         }
+
+        @media (max-width: 880px){
+            .hero-inner{grid-template-columns: 1fr}
+            .grid{grid-template-columns: 1fr}
+        }
         .card{
             background:var(--surface); border-radius:var(--radius); border:1px solid rgba(110,106,222,.14);
             box-shadow: var(--shadow); padding:22px;
@@ -275,7 +280,6 @@
                     <article class="card gallery" aria-labelledby="gallery-title">
                         <div class="service-head">
                             <h3 class="service-title" id="gallery-title">Photo gallery</h3>
-                            <span class="badge">Swipe or use arrows</span>
                         </div>
 
                         <div class="carousel" id="svc-carousel" aria-roledescription="carousel" aria-label="Service photos">
